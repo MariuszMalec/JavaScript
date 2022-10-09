@@ -3,39 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Calculate time</title>
-      <script type="text/javascript">
-
-        function counter()
-        {
-            var today = new Date();
-            var day = today.getDate();
-            var month = today.getMonth()+1;
-            var year = today.getFullYear();
-            var hour = today.getHours();
-            if (hour < 10) hour = "0" + hour
-
-            var minute = today.getMinutes();
-            if (minute < 10) minute = "0" + minute 
-
-            var second = today.getSeconds();
-            if (second < 10) second = "0" + second
-
-            document.getElementById("currentTime").innerHTML = day+"/"+month+"/"+year+" | "+hour+":"+minute+":"+second;
-
-
-
-            setTimeout("counter()",1000);
-        }
-
+      <script type="text/javascript" src="timer.js">
       </script>
   </head>
   <body onload="counter();">
     <h1 class="display-3"> Time day</h1>
       <div id="currentTime">Czas przyklad: https://youtu.be/OcwON22ctYc?t=1293</div>
-
-      <script type="text/javascript">
-
-      </script>
-
   </body>
 </html>
