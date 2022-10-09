@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculate time</title>
+      <script type="text/javascript">
+
+        function counter()
+        {
+            var today = new Date();
+            var day = today.getDate();
+            var month = today.getMonth()+1;
+            var year = today.getFullYear();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            document.getElementById("currentTime").innerHTML = day+"/"+month+"/"+year+" | "+hour+":"+minute+":"+second;
+
+            setTimeout("counter()",1000);
+        }
+
+      </script>
+  </head>
+  <body onload="counter();">
+    <h1 class="display-3"> Time day</h1>
+    <div id="currentTime">Czas przyklad: https://youtu.be/OcwON22ctYc?t=1293</div>
+
+      <script type="text/javascript">
+
+      </script>
+
+  </body>
+</html>
